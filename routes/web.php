@@ -17,3 +17,6 @@ Route::get('/', 'PagesController@root')->name('root');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+
+//个人资料展示、更新、编辑路由
+Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]);
