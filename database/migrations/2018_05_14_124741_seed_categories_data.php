@@ -19,11 +19,11 @@ class SeedCategoriesData extends Migration
                 'description' => '分享点滴，记录生活',
             ],
             [
-                'name'        => '活动',
+                'name'        => '校园活动',
                 'description' => '参与学校发布线上活动',
             ],
             [
-                'name'        => '问答',
+                'name'        => '求助',
                 'description' => '请保持友善，互帮互助',
             ],
             [
