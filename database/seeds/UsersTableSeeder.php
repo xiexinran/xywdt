@@ -47,6 +47,7 @@ class UsersTableSeeder extends Seeder
         $user->name = 'xxr';
         $user->email = 'xxr@com';
         $user->avatar = 'http://localhost:8001/xywdt/public/uploads/images/avatars/201805/13/1_1526225673_dLEGFpBzoS.jpg';
+        $user->password = bcrypt('password');
         $user->save();
 
     }
