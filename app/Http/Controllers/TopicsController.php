@@ -7,8 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use App\Models\Category;
-use Auth;
 
+use Auth;
 class TopicsController extends Controller
 {
     public function __construct()
@@ -36,7 +36,7 @@ class TopicsController extends Controller
         return view('topics.create_and_edit', compact('topic', 'categories'));
 	}
 
-	public function store(TopicRequest $request,Topic $topic)
+	public function store(TopicRequest $request, Topic $topic)
 	{
         $topic->fill($request->all());
         $topic->user_id = Auth::id();

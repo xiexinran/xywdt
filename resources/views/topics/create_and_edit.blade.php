@@ -8,11 +8,11 @@
 
                 <div class="panel-body">
                     <h2 class="text-center">
-
+                        <i class="glyphicon glyphicon-edit"></i>
                         @if($topic->id)
-                            修改动态
+                            编辑动态
                         @else
-                            发布动态
+                            新建动态
                         @endif
                     </h2>
 
@@ -47,7 +47,7 @@
                                     </div>
 
                                     <div class="well well-sm">
-                                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 保存</button>
+                                        <button type="submit" class="btn btn-primary">保存</button>
                                     </div>
                                 </form>
                 </div>
