@@ -50,5 +50,12 @@ class UsersTableSeeder extends Seeder
         $user->password = bcrypt('password');
         $user->save();
 
+
+
+        // 将 1 号用户指派为『管理员』
+        $user = User::find(1);
+        $user->assignRole('Maintainer');
+
+
     }
 }
