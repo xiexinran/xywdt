@@ -46,7 +46,7 @@
                     @can('update', $topic)
                         <div class="operate">
                             <hr>
-                           
+
 
                             <form action="{{ route('topics.destroy', $topic->id) }}" method="post">
                                 {{ csrf_field() }}
